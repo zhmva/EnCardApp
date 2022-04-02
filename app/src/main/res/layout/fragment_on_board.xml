@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.onBoard.OnBoardFragment">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOnBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="15sp"
+        app:cornerRadius="20dp"
+        android:text="Finish"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/onBoardPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:overScrollMode="never"
+        app:tabIndicatorHeight="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/btnOnBoard"
+        app:layout_constraintEnd_toStartOf="@id/btnOnBoard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnOnBoard"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

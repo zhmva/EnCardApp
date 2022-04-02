@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/addCategoryFragment"
+        android:icon="@drawable/ic_baseline_calendar_today_24"
+        android:title="Сегодня"/>
+    <item
+        android:id="@+id/cardFragment"
+        android:icon="@drawable/ic_baseline_menu_book_24"
+        android:title="Обучение" />
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_baseline_perm_identity_24"
+        android:title="Кабинет" />
+</menu>
